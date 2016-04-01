@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Talia Long Name</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="wrapper">
+		<nav>
+			<ul class="mainNav">
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Skills</a></li>
+				<li class="js-light-toggle">Light</li>
+				<li class="js-dark-toggle">Dark</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="title">
+		<h1>Talia Harrison-Marcassa</h1>
+	</section>
+	<section class="about">
+		<h2>Who I am</h2>
+		<p>I'm a newbie web dev.</p>
+		<p>My skills at the moment include HTML5, CSS3 and basic Javascript.</p>
+		<p>I want to learn more Jquery, Javascript and conquer wordpress.</p>
+		<p>Most of my experience lies in theatre. I'm very good at getting a project from point A to point B.</p>
+		<p>other stuff I dabble in: Illustrator, gluten free baking, SVG animation.</p>
+	</section>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.js-light-toggle').on('click', function(){
+				console.log('light toggled');
+				$('body').removeClass('dark');
+				$('body').addClass('light');
+			})
+			$('.js-dark-toggle').on('click', function(){
+				console.log('dark toggled');
+				$('body').removeClass('light');
+				$('body').addClass('dark');
+			})
+		    // Document is ready! All your code goes inside.
+		    // You only need one of these per page
+		}); 
+	</script>
+</body>
+</html>
